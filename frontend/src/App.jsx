@@ -11,12 +11,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Authenticated Protected Routes */}
         <Route
           path="/dashboard"
           element={
@@ -25,8 +23,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Fallback Catch-All Route (Redirect to Home if route not found) */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

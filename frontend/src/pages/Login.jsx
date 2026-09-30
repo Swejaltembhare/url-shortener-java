@@ -62,7 +62,6 @@ function Login() {
 
   return (
     <div className="relative min-h-screen bg-slate-50 px-4 py-10 text-slate-900 flex flex-col justify-center items-center selection:bg-emerald-100 selection:text-emerald-800">
-      {/* Top Back Nav Link */}
       <div className="w-full max-w-md mb-6">
         <Link
           to="/"
@@ -74,7 +73,6 @@ function Login() {
       </div>
 
       <div className="w-full max-w-md space-y-6">
-        {/* Header Title */}
         <div className="text-center space-y-2">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-600 shadow-sm">
             <Link2 className="h-6 w-6" />
@@ -89,12 +87,10 @@ function Login() {
           </p>
         </div>
 
-        {/* Login Form Card */}
         <form
           onSubmit={handleSubmit}
           className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm space-y-4"
         >
-          {/* Flash Message Banner */}
           {message && (
             <div className="flex items-center gap-2.5 rounded-xl border border-emerald-200 bg-emerald-50 p-3.5 text-xs text-emerald-800">
               <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600" />
@@ -102,7 +98,6 @@ function Login() {
             </div>
           )}
 
-          {/* Email Input */}
           <div>
             <label className="mb-1.5 block text-xs font-medium text-slate-700">
               Email Address
@@ -122,7 +117,6 @@ function Login() {
             </div>
           </div>
 
-          {/* Password Input */}
           <div>
             <label className="mb-1.5 block text-xs font-medium text-slate-700">
               Password
@@ -140,7 +134,6 @@ function Login() {
                 className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 pl-10 pr-10 text-xs sm:text-sm text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20"
               />
 
-              {/* Password Eye Toggle */}
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -155,7 +148,6 @@ function Login() {
             </div>
           </div>
 
-          {/* Error Banner */}
           {error && (
             <div className="flex items-center gap-2.5 rounded-xl border border-rose-200 bg-rose-50 p-3.5 text-xs text-rose-600">
               <AlertCircle className="h-4 w-4 shrink-0 text-rose-600" />
@@ -163,7 +155,6 @@ function Login() {
             </div>
           )}
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
