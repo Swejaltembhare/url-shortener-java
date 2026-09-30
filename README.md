@@ -39,8 +39,16 @@ A full-stack URL Shortener application built using Java Spring Boot and React.
 ## Project Structure
 
 ```text
-url-shortener
-├── src/          # Spring Boot Backend
-├── frontend/     # React Frontend
+url-shortener-java
+│
+├── src/                 ← Backend
+├── frontend/            ← Frontend
+│   ├── public/
+│   │   └── logo.png
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
+│
 ├── pom.xml
-└── frontend/package.json
+├── mvnw
+└── .gitignore
